@@ -65,7 +65,7 @@ To add in your project `import {GlobalStyle} from 'design-components'` and enclo
 
 ### Button
 
-![Buttons Color](https://gitlab.com/freelms/design-components/-/raw/baseCSS/example/public/btns.png)
+![Buttons Color](https://github.com/Md-Mudassir/design-components/blob/master/example/public/btns.png?raw=true)
 
 | Prop       | Type   | Default | Description                                                                                                                                   |
 | ---------- | ------ | ------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
