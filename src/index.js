@@ -63,7 +63,7 @@ export const Title = styled.h1`
   padding: 1rem;
 `
 
-export const SubTitle = styled.h1`
+export const SubTitle = styled.h2`
   font-size: 1.3rem;
   padding: 1rem;
 `
@@ -75,7 +75,7 @@ export const Button = styled.button`
   background: ${(props) => props.Background || Theme.primary};
   color: ${(props) => props.Color || 'white'};
   outline: 0;
-  width: ${(props) => props.Width || '220px'};
+  width: ${(props) => props.Width || '12rem'};
   border: 0;
   text-decoration: none;
   text-align: center;
@@ -87,9 +87,22 @@ export const Button = styled.button`
   box-shadow: 0px 3px 6px rgba(68, 47, 47, 0.5);
 
   &:hover {
-    filter: contrast(200%);
+    filter: contrast(250%);
     box-shadow: 0px 5px 4px rgba(68, 47, 47, 0.5);
     transition: box-shadow 0.2s;
+  }
+`
+export const SocialBtn = styled.div`
+  width: ${(props) => props.Width || '65px'};
+  box-shadow: 0px 2px 4px rgba(68, 47, 47, 0.5);
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin: 0.7rem;
+  cursor: pointer;
+
+  img {
+    display: block;
+    width: 100%;
   }
 `
 
@@ -98,14 +111,50 @@ export const Button = styled.button`
 export const HorizontalFlex = styled.section`
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   flex-wrap: wrap;
 `
 
+/* FORM AND INPUT */
+
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
 export const Input = styled.input`
-  padding: 0.5em;
-  margin: 0.5em;
-  color: ${(props) => props.inputColor || 'palevioletred'};
-  background: papayawhip;
-  border: none;
-  border-radius: 3px;
+  outline: 0;
+  background: #f2f2f2;
+  width: ${(props) => props.Width || '300px'};
+  border: 0;
+  margin: 1rem 0 0 0;
+  padding: 15px;
+  border-radius: 26px;
+  font-size: 1rem;
+`
+
+/* CARD */
+export const Card = styled.section`
+  width: ${(props) => props.Width || '22rem'};
+  height: ${(props) => props.height || 'fit-content'};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(68, 47, 47, 0.5);
+  background: white;
+`
+export const Thumbnail = styled.section`
+  width: ${(props) => props.Width || '120px'};
+  box-shadow: 0px 6px 8px rgba(68, 47, 47, 0.5);
+  margin: 1rem;
+  border-radius: ${(props) => props.Radius || '50%'};
+
+  img {
+    display: block;
+    width: 100%;
+  }
 `
