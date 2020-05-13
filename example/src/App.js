@@ -12,7 +12,10 @@ import {
   SocialBtn,
   Thumbnail,
   SubTitle,
-  HorizontalFlex
+  HorizontalFlex,
+  EventCard,
+  Timings,
+  Enroll
 } from 'design-components'
 
 const App = () => {
@@ -24,6 +27,9 @@ const App = () => {
       <SubTitle>Buttons Component</SubTitle>
       <HorizontalFlex>
         <Button>Primary</Button>
+        <Button Background={Theme.cautious} Color='black' Radius='10px 0 10px'>
+          Curve
+        </Button>
         <Button Background={Theme.secondary}>Secondary</Button>
         <Button Background={Theme.warning}>Warning</Button>
         <Button Background={Theme.danger}>Danger</Button>
@@ -52,28 +58,69 @@ const App = () => {
           />
         </SocialBtn>
       </HorizontalFlex>
-      <SubTitle>Card, Form, Thumbnail Components</SubTitle>
-      <Card>
-        <Thumbnail>
+      <SubTitle>
+        Card, Form, Thumbnail, Responsive EventCard Components
+      </SubTitle>
+      <HorizontalFlex>
+        <Card>
+          <Thumbnail>
+            <img
+              alt='dp'
+              src='https://image.flaticon.com/icons/svg/1177/1177568.svg'
+            />
+          </Thumbnail>
+          <Form>
+            <Input type='text' placeholder='Name' name='name' required />
+            <Input
+              type='number'
+              placeholder='Mobile Number'
+              name='phone'
+              maxLength='10'
+              InputMode='tel'
+              required
+            />
+            <Input type='email' placeholder='Email' name='email' required />
+            <Button type='submit'>Update</Button>
+          </Form>
+        </Card>
+        <EventCard>
           <img
-            alt='dp'
-            src='https://image.flaticon.com/icons/svg/1177/1177568.svg'
+            src='https://mernlmsassets.s3.ap-south-1.amazonaws.com/BannerImages/Placed.png'
+            alt='h'
           />
-        </Thumbnail>
-        <Form>
-          <Input type='text' placeholder='Name' name='name' required />
-          <Input
-            type='number'
-            placeholder='Mobile Number'
-            name='phone'
-            maxLength='10'
-            InputMode='tel'
-            required
-          />
-          <Input type='email' placeholder='Email' name='email' required />
-          <Button type='submit'>Update</Button>
-        </Form>
-      </Card>
+          <h1>How to Crack Off Campus Interviews of Tech Giants</h1>
+          <Timings>
+            <p>
+              Starts on: <b>07 May 2020</b>
+            </p>
+            <p>
+              Entry Fee: <b>Free</b>
+            </p>
+            <p>
+              Venue: <b>Online</b>
+            </p>
+          </Timings>
+          <p>
+            Webinar on How to Crack Off Campus Interviews of Tech Giants by
+            Parikh Jain
+          </p>
+          <Enroll>
+            <p>
+              <b>2021</b> are participating
+            </p>
+            <Button
+              Background={Theme.cautious}
+              Color='black'
+              Radius='10px 0 10px'
+              Margin='0'
+              Width='40%'
+            >
+              Enroll Now
+            </Button>
+          </Enroll>
+        </EventCard>
+      </HorizontalFlex>
+
       <GlobalStyle />
     </Wrapper>
   )

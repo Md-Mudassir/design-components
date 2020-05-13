@@ -75,14 +75,14 @@ export const Button = styled.button`
   background: ${(props) => props.Background || Theme.primary};
   color: ${(props) => props.Color || 'white'};
   outline: 0;
-  width: ${(props) => props.Width || '12rem'};
+  width: ${(props) => props.Width || '40%'};
   border: 0;
   text-decoration: none;
   text-align: center;
   font-size: 1rem;
   margin: ${(props) => props.Margin || '1rem'};
   padding: 0.7rem 1rem;
-  border-radius: 26px;
+  border-radius: ${(props) => props.Radius || '26px'};
   cursor: pointer;
   box-shadow: 0px 3px 6px rgba(68, 47, 47, 0.5);
 
@@ -99,6 +99,11 @@ export const SocialBtn = styled.div`
   padding: 0.5rem;
   margin: 0.7rem;
   cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
+  }
 
   img {
     display: block;
@@ -121,17 +126,23 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: ${(props) => props.Width || '100%'};
 `
 
 export const Input = styled.input`
   outline: 0;
   background: #f2f2f2;
-  width: ${(props) => props.Width || '300px'};
+  width: ${(props) => props.Width || '100%'};
   border: 0;
   margin: 1rem 0 0 0;
   padding: 15px;
   border-radius: 26px;
   font-size: 1rem;
+
+  &:focus {
+    box-shadow: 0px 3px 2px rgba(68, 47, 47, 0.3);
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  }
 `
 
 /* CARD */
@@ -157,4 +168,54 @@ export const Thumbnail = styled.section`
     display: block;
     width: 100%;
   }
+`
+/* Events Card */
+export const EventCard = styled.section`
+  background: ${(props) => props.Background || '#f5f5f5'};
+  flex: 1 1;
+  flex-basis: ${(props) => props.Basis || '40rem'};
+  min-height: ${(props) => props.Height || '42vh'};
+  margin: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid grey;
+  font-size: 1rem;
+  border-radius: 10px;
+
+  h1,
+  p {
+    padding: 0 10px;
+    margin: 6px 0 6px 0;
+  }
+
+  &:hover {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.2s ease-in;
+  }
+
+  img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  /* Mobile */
+  @media (max-width: 576px) {
+    font-size: 0.8rem;
+  }
+
+  /* iPad, iPad Pro*/
+  @media (max-width: 1024px) {
+    min-height: 33vh;
+  }
+`
+export const Timings = styled.section`
+  display: flex;
+  flex-wrap: wrap;
+`
+
+export const Enroll = styled.section`
+  display: flex;
+  justify-content: space-between;
 `

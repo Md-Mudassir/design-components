@@ -4,7 +4,7 @@
 
 [![NPM](https://img.shields.io/npm/v/design-components.svg)](https://www.npmjs.com/package/design-components) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-### [View Demo](https://md-mudassir.github.io/design-components/)
+### [View Demo](https://md-mudassir.github.io/design-components/) || [Demo Source Code](https://github.com/Md-Mudassir/design-components/blob/master/example/src/App.js)
 
 ## Install
 
@@ -115,6 +115,7 @@ Buttons: primary, secondary, warning, cautious, danger
 | as         | string | null    | to make the button a link pass in `as='a' href='/'`                                                                                           |
 | Margin     | string | 1rem    | adds margin around the button                                                                                                                 |
 | Width      | string | 220px   | make the button smaller or larger `Width='300px'`                                                                                             |
+| Radius     | string | 26px    | change Radius in all angles `Radius='10px 0 10px'`                                                                                            |
 
 ### Card
 
@@ -124,6 +125,24 @@ Buttons: primary, secondary, warning, cautious, danger
 | ------ | ------ | ----------- |
 | Width  | string | 22rem       |
 | Height | string | fit-content |
+
+### Responsive EventCard
+
+`<Card></Card>`
+
+| Prop       | Type   | Default | Description                                                                                      |
+| ---------- | ------ | ------- | ------------------------------------------------------------------------------------------------ |
+| Background | string | Grey    |
+| Height     | string | 42vh    | Its better go assign viewport height value rather than a fixed px value.                         |
+| Basis      | string | 40rem   | flex-basis, Card size grows and shriks accordingly but will not exceed the basis size i.e 40rem. |
+
+### Form
+
+`<Form></Form>`
+
+| Prop  | Type   | Default |
+| ----- | ------ | ------- |
+| Width | string | 100%    |
 
 ### Input
 
