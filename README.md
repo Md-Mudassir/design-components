@@ -128,7 +128,7 @@ Buttons: primary, secondary, warning, cautious, danger
 
 ### Responsive EventCard
 
-`<Card></Card>`
+`<EventCard></EventCard>`
 
 | Prop       | Type   | Default | Description                                                                                      |
 | ---------- | ------ | ------- | ------------------------------------------------------------------------------------------------ |

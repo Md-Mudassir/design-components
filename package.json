@@ -1,6 +1,6 @@
 {
   "name": "design-components",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "careerlabs designed components",
   "author": "Md-Mudassir",
   "license": "MIT",
@@ -51,5 +51,7 @@
   "files": [
     "dist"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "styled-components": "^5.1.1"
+  }
 }

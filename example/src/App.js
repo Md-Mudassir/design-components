@@ -15,7 +15,10 @@ import {
   HorizontalFlex,
   EventCard,
   Timings,
-  Enroll
+  Enroll,
+  FooterContainer,
+  FooterCopyRight,
+  FooterDescription
 } from 'design-components'
 
 const App = () => {
@@ -120,7 +123,25 @@ const App = () => {
           </Enroll>
         </EventCard>
       </HorizontalFlex>
-
+      <FooterContainer>
+        <FooterDescription>
+          <img
+            className='footer-logo'
+            src='https://mernlmsassets.s3.ap-south-1.amazonaws.com/img/footerlogo.PNG'
+            alt='CareerLabs'
+          />
+          <div className='footer-paragraph'>
+            CareerLabs is the go-to place for all the career needs of students
+            and young professionals! We have a proven track record of helping
+            students craft their dream career journeys. We offer a wide range of
+            preparatory programs for National & International entrance exams.
+            Also, we specialize in providing elite Admissions Consulting
+            Services for those seeking admissions to Graduate & Business Schools
+            both in India and abroad.
+          </div>
+        </FooterDescription>
+      </FooterContainer>
+      <FooterCopyRight>Copyright © 2020 CareerLabs</FooterCopyRight>
       <GlobalStyle />
     </Wrapper>
   )

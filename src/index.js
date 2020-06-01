@@ -219,3 +219,77 @@ export const Enroll = styled.section`
   display: flex;
   justify-content: space-between;
 `
+
+/*  FOOTER SECTION */
+
+export const FooterContainer = styled.section`
+  padding: 5% 15% 5% 10%;
+  background-color: #00254a;
+`
+
+export const FooterDescription = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  width: 70%;
+  padding-bottom: 5%;
+
+  .footer-logo {
+    width: 30%;
+    position: relative;
+    left: -15px;
+  }
+
+  .footer-paragraph {
+    width: 155%;
+  }
+  @media only screen and (max-width: 650px) {
+    display: none;
+  }
+  @media only screen and (max-width: 1000px) {
+    display: none;
+  }
+`
+export const FooterLists = styled.section`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  /* .footer-list {
+  } */
+
+  .footer-list-header {
+    color: #13c6e7;
+    margin-top: 16px;
+    margin-bottom: 3px;
+  }
+
+  .footer-list-item {
+    list-style-type: none;
+    margin: 0;
+  }
+  .footer-list-item a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  @media only screen and (max-width: 768px) and (min-width: 527px) {
+    div:nth-child(2) {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 526px) {
+    div:nth-child(1),
+    div:nth-child(2) {
+      display: none;
+    }
+  }
+`
+export const FooterCopyRight = styled.div`
+  background-color: #00254a;
+  text-align: center;
+  padding: 1rem 0;
+  color: #fff;
+`
