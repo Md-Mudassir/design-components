@@ -16,6 +16,7 @@ import {
   EventCard,
   Timings,
   Enroll,
+  CourseCard,
   FooterContainer,
   FooterCopyRight,
   FooterDescription
@@ -122,6 +123,26 @@ const App = () => {
             </Button>
           </Enroll>
         </EventCard>
+        <CourseCard
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.7 }}
+        >
+          <img
+            src='https://mernlmsassets.s3.ap-south-1.amazonaws.com/Thumbnails/mechine%20learning%20-Thumbnail.png'
+            alt='course thumbnail'
+          />
+          <h1>Machine Learning</h1>
+          <p>
+            Become a Machine Learning expert and prepare yourself for the future
+            trends of technologies. Get hands-on experience with projects like..
+          </p>
+          <Enroll>
+            <p>471 Enrolled</p>
+            <p>Avg Salary: ₹ 9.5 Lakhs p.a</p>
+          </Enroll>
+        </CourseCard>
       </HorizontalFlex>
       <FooterContainer>
         <FooterDescription>

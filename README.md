@@ -126,6 +126,14 @@ Buttons: primary, secondary, warning, cautious, danger
 | Width  | string | 22rem       |
 | Height | string | fit-content |
 
+### CourseCard
+
+`<CourseCard></CourseCard>`
+
+| Prop  | Type   | Default |
+| ----- | ------ | ------- |
+| Width | string | 380px   |
+
 ### Responsive EventCard
 
 `<EventCard></EventCard>`

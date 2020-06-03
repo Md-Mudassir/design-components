@@ -169,6 +169,51 @@ export const Thumbnail = styled.section`
     width: 100%;
   }
 `
+/* Course Card */
+export const CourseCard = styled.section`
+  background: #f5f5f5;
+  flex: 1 1 380px;
+  max-width: ${(props) => props.Width || '380px'};
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid grey;
+  font-size: 1rem;
+  border-radius: 10px;
+
+  h1,
+  p {
+    padding: 0 10px;
+    margin: 6px 0 6px 0;
+  }
+
+  &:hover {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.2s ease-in;
+    cursor: pointer;
+  }
+
+  img {
+    width: 100%;
+    height: 280px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-position: center;
+
+    @media (max-width: 576px) {
+      height: 200px;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 576px) {
+    font-size: 0.8rem;
+    margin: 1rem;
+    max-width: 320px;
+  }
+`
+
 /* Events Card */
 export const EventCard = styled.section`
   background: ${(props) => props.Background || '#f5f5f5'};
